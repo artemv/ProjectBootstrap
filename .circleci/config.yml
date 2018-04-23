@@ -34,7 +34,6 @@ jobs:
             gradle-2.7/bin/gradle jar
             gradle-2.7/bin/gradle upgrade
             gradle-2.7/bin/gradle install
-            fail
       - save_cache:
           key: dependency-cache-{{ checksum "package.json" }}
           paths:
