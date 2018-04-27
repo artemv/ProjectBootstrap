@@ -28,7 +28,7 @@ export default class BootstrappedIronManCustomization {
 }
 
 UI.plugin(() => {
-    console.log('Loading BootstrappedIronMan plugin @@version @@timestamp');
+    log.info('Loading BootstrappedIronMan plugin @@version @@timestamp');
 
     window.customization = new BootstrappedIronManCustomization();
 });
