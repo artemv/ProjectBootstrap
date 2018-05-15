@@ -9,4 +9,4 @@ export {
 };
 
 //pick the files code
-import './js/BootstrappedIronManCustomization';
+import './BootstrappedIronManCustomization';
