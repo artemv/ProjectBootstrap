@@ -1,5 +1,25 @@
 # BootstrappedIronMan
 
+### Installation 
+[![CircleCI](https://circleci.com/gh/egis/BootstrappedIronMan.svg?style=svg&circle-token=d88417ff93c9732d08a7ac9a1b6964d1259e516a)](https://circleci.com/gh/egis/BootstrappedIronMan)
+
+[![DEV](https://img.shields.io/badge/Environment-DEV-green.svg)](https:///BootstrappedIronMan-dev.papertrail.co.za)
+
+## Switching to PT 8.8.9-based build env after updating via cookiecutter
+If you use Node version lower than 10.13 run this to update NPM dependencies:
+```
+yarn --ignore-engines
+```
+Then (with any Node version) add yarn.lock to code repository.
+
+Then run these steps to make sure the building works: 
+```
+gradle setup
+gradle jar
+gradle upgrade
+gradle install
+```
+
 ## Dev env & UAT
 
 ### Deployment
